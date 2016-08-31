@@ -41,6 +41,9 @@
         <Button Text="Personalization" Clicked="PersonalizationButtonClick"
                 VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
 
+        <Button Text="Pascal" Clicked="pascalButtonClick"
+        VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+
       </StackLayout>
     </ScrollView>
 
