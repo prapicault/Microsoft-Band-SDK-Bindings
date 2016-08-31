@@ -27,5 +27,10 @@ namespace Microsoft.Band.Portable.Sample
 
             //ClientPage.band.TileManager.StartEventListenersAsync();
         }
+
+        private void helloClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
+        }
     }
 }
