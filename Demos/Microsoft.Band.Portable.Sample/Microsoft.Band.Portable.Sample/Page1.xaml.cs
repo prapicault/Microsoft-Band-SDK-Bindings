@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ContextereApp.BandLayouts;
+using Microsoft.Band.Portable.Tiles.Pages.Data;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,10 +22,13 @@ namespace Microsoft.Band.Portable.Sample
         {
             base.OnAppearing();
             //ClientPage.band.NotificationManager.SendMessageAsync(ClientPage.tile.Id, "Hi", "My message", DateTime.Now, true);
+            ClientPage.band.TileManager.SetTilePageDataAsync(ClientPage.tile.Id);
+            ActionScreen.screen.wrappedTextBlockData.Text = "Perform another action";
+            ClientPage.band.TileManager.SetTilePageDataAsync(ClientPage.tile.Id, new PageData[] { ActionScreen.screen.Data });
             ClientPage.band.TileManager.TileButtonPressed += (sender, e) =>
             {
                 Device.BeginInvokeOnMainThread(() => helloClicked(null, null));
-               
+                ClientPage.band.TileManager.StopEventListenersAsync();
             };
 
             ClientPage.band.TileManager.StartEventListenersAsync();
@@ -33,7 +38,5 @@ namespace Microsoft.Band.Portable.Sample
         {
             await Navigation.PushAsync(new Page2());
         }
-
-        protected
     }
 }

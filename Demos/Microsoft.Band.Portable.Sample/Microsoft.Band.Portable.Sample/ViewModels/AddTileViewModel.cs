@@ -16,6 +16,7 @@ using Microsoft.Band.Portable.Tiles;
 
 using Microsoft.Band.Portable.Tiles.Pages;
 using Microsoft.Band.Portable.Tiles.Pages.Data;
+using ContextereApp.BandLayouts;
 
 namespace Microsoft.Band.Portable.Sample.ViewModels
 {
@@ -38,7 +39,8 @@ namespace Microsoft.Band.Portable.Sample.ViewModels
             tileTheme = App.DefaultTheme;
             tileId = Guid.NewGuid();
             tileName = "New Tile";
-
+        
+            
             GenerateTileIdCommand = new Command(() =>
             {
                 TileId = Guid.NewGuid().ToString("D");
@@ -336,9 +338,12 @@ namespace Microsoft.Band.Portable.Sample.ViewModels
                             }
                         }
                     }
-                }
+                },
+                ActionScreen.screen.Layout
             };
         }
+
+        
 
         private static IEnumerable<PageData> CreatePageDatas()
         {
@@ -417,7 +422,8 @@ namespace Microsoft.Band.Portable.Sample.ViewModels
                             PressedColor = new BandColor(0, 127, 127)
                         }
                     }
-                }
+                },
+                ActionScreen.screen.Data,
             };
         }
 

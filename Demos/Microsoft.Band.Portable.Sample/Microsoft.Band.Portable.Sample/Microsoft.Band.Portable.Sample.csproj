@@ -60,6 +60,7 @@
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageLayout\Action.cs" />
     <Compile Include="PersonalizationPage.xaml.cs">
       <DependentUpon>PersonalizationPage.xaml</DependentUpon>
     </Compile>
@@ -174,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="PageLayout\Action.msbtl" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ColorPickerPage.xaml">

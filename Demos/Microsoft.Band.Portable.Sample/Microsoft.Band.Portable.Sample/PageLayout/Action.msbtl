@@ -1,0 +1,104 @@
+{
+  "$type": "DesignerContents",
+  "DesignerState": {
+    "$type": "DesignerState",
+    "BandLayout": {
+      "$type": "BandLayout",
+      "Version": {
+        "$type": "Version",
+        "Major": 2,
+        "Build": -1,
+        "Revision": -1
+      },
+      "BandTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "TileTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "RootPanel": {
+        "$type": "FilledPanel",
+        "Elements": {
+          "$type": "Elements",
+          "$values": [
+            {
+              "$type": "TextButton",
+              "PressedColor": "R: 32, G: 32, B: 32",
+              "Text": "Yes",
+              "Name": "",
+              "ElementId": 5,
+              "Id": "98d7823a-7b75-468f-857a-3ae87a9539e8",
+              "Left": 159,
+              "Top": 25,
+              "Width": 90,
+              "Height": 32,
+              "HorizontalAlignment": 2
+            },
+            {
+              "$type": "WrappedTextBlock",
+              "Color": "R: 255, G: 255, B: 255",
+              "Text": "Connect sub-panel to main panel\r\n1. Attach sub",
+              "Name": "",
+              "ElementId": 4,
+              "Id": "3a016f86-f705-4124-af0b-0a07014e7755",
+              "Left": 8,
+              "Top": 61,
+              "Width": 260,
+              "Height": 200
+            },
+            {
+              "$type": "TextBlock",
+              "AutoWidth": true,
+              "Color": "R: 255, G: 255, B: 255",
+              "Text": "DO",
+              "Name": "",
+              "ElementId": 3,
+              "Id": "31a8689b-0cf9-4f40-8518-cad258b5df1a",
+              "Left": 7,
+              "Top": 27,
+              "Width": 32,
+              "Height": 32
+            },
+            {
+              "$type": "TextBlock",
+              "AutoWidth": true,
+              "Color": "R: 64, G: 199, B: 243",
+              "Text": "contextere",
+              "Name": "",
+              "ElementId": 2,
+              "Id": "6b72e435-c904-4e1a-9cac-958bdd84b635",
+              "Left": 7,
+              "Top": -1,
+              "Width": 32,
+              "Height": 32
+            }
+          ]
+        },
+        "Name": "",
+        "ElementId": 1,
+        "Id": "981a914a-8e8a-434a-95d9-5ad65b11584c",
+        "Width": 258,
+        "Height": 128
+      }
+    },
+    "SelectedElements": {
+      "$type": "IdList",
+      "$values": [
+        "3a016f86-f705-4124-af0b-0a07014e7755"
+      ]
+    }
+  },
+  "ZoomPercent": 100.0
+}
