@@ -26,21 +26,21 @@ namespace Microsoft.Band.Portable.Sample.ViewModels
 
                 IsLoading = false;
 
-                BandClient.TileManager.TileButtonPressed += (sender, e) =>
-                {
-                    CrossLocalNotifications.Current.Show(
-                        "Tile Button Pressed",
-                        string.Format("Button [{0}] pressed on page [{1}] of tile [{2}].", e.ElementId, e.PageId, e.TileId));
-                };
-                BandClient.TileManager.TileOpened += (sender, e) =>
-                {
-                    CrossLocalNotifications.Current.Show("Tile Opened", string.Format("Tile [{0}] opened.", e.TileId));
-                };
-                BandClient.TileManager.TileClosed += (sender, e) =>
-                {
-                    CrossLocalNotifications.Current.Show("Tile Closed", string.Format("Tile [{0}] closed.", e.TileId));
-                };
-                await BandClient.TileManager.StartEventListenersAsync();
+                //BandClient.TileManager.TileButtonPressed += (sender, e) =>
+                //{
+                //    CrossLocalNotifications.Current.Show(
+                //        "Tile Button Pressed",
+                //        string.Format("Button [{0}] pressed on page [{1}] of tile [{2}].", e.ElementId, e.PageId, e.TileId));
+                //};
+                //BandClient.TileManager.TileOpened += (sender, e) =>
+                //{
+                //    CrossLocalNotifications.Current.Show("Tile Opened", string.Format("Tile [{0}] opened.", e.TileId));
+                //};
+                //BandClient.TileManager.TileClosed += (sender, e) =>
+                //{
+                //    CrossLocalNotifications.Current.Show("Tile Closed", string.Format("Tile [{0}] closed.", e.TileId));
+                //};
+                //await BandClient.TileManager.StartEventListenersAsync();
             }
 
             await base.Prepare();
