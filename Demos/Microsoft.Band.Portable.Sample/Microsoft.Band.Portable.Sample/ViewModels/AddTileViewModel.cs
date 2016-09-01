@@ -427,7 +427,7 @@ namespace Microsoft.Band.Portable.Sample.ViewModels
             };
         }
 
-        private static class TilePages
+        public static class TilePages
         {
             public static class ImagePage
             {

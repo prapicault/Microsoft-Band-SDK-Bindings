@@ -68,5 +68,6 @@ namespace Microsoft.Band.Portable.Sample
 
 			await Navigation.PushAsync(picker);
 		}
-    }
+    
+}
 }

@@ -13,8 +13,9 @@ namespace ContextereApp.BandLayouts
 	public class ActionScreen
 	{
         public static ActionScreen screen = new ActionScreen();
+        public static Guid GUID = new Guid("13cfc91c-4fc0-4226-bc37-6977d7f6c411");
 
-		private readonly PageLayout pageLayout;
+        private readonly PageLayout pageLayout;
 		private readonly PageData pageLayoutData;
 		
 		private readonly FilledPanel panel = new FilledPanel();
@@ -106,7 +107,7 @@ namespace ContextereApp.BandLayouts
 
             pageLayoutData = new PageData()
             {
-                PageId = Guid.NewGuid(),
+                PageId = ActionScreen.GUID,
                 PageLayoutIndex = 3,
                 Data = { buttonData, wrappedTextBlockData, textBlockData, textBlock2Data }
             };

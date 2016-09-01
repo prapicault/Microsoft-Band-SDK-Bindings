@@ -22,6 +22,7 @@ namespace Microsoft.Band.Portable.Sample
         {
             base.OnAppearing();
             //ClientPage.band.NotificationManager.SendMessageAsync(ClientPage.tile.Id, "Hi", "My message", DateTime.Now, true);
+            ClientPage.band.TileManager.RemoveTilePagesAsync(ClientPage.tile.Id);
             ClientPage.band.TileManager.SetTilePageDataAsync(ClientPage.tile.Id);
             ActionScreen.screen.wrappedTextBlockData.Text = "Perform another action";
             ClientPage.band.TileManager.SetTilePageDataAsync(ClientPage.tile.Id, new PageData[] { ActionScreen.screen.Data });
